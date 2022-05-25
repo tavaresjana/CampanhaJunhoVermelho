@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- link para pegar o estilo CSS dos servidores do Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <!--código referente a NAVBAR Menu-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <!--é possível mudar a cor da navbar alterando "bg-info" para "bg-danger" por exemplo-->
+        <a class="navbar-brand" href="index.html"><b>Junho Vermelho</a></b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#">Home<span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Tipos Sanguíneos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#">Doenças do Sangue</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Redes Sociais
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Instagram</a>
+                <a class="dropdown-item" href="#">Facebook</a>
+                <a class="dropdown-item" href="#">Twitter</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Algo mais aqui</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+       <!--/FIM código referente a NAVBAR-->
+
+      <!--Grid-->
+
+      <!--container faz com que fique um espaço preenchido fixo na tela, caso a gente não queira podemos tirar e caso a 
+      gente queira que fique mais justo use fluid-->
+    <div class="container">
+
+       <!--mt = margin top, vai de 1 a 5-->
+       <!--as colunas possuem um padding próprio para remover é necessário informar isso como fizemos através do "p-0"-->
+       <!--aqui estamos falando que queremos usar display flex e a propriedade center dele-->
+       <!-- para alterar a qtd de colunas no grid é importante alterar o valor de "col-md-6" a qtd máx é 12-->
+       <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-md-6 p-0">
+                    <div class="bg-danger">4 coluna</div>
+            </div>
+
+            <div class="col-md-6 p-0">
+                <div class="bg-warning">4 coluna</div>
+             </div>
+
+        </div>
+
+        </div>
+    </div>
+      <!--/Grid-->
+
+
+
+
+
+
+
+<!-- Script necessário para usar código JS do Bootstrap! -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ </body>
+ </html>
