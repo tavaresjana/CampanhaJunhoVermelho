@@ -1,89 +1,316 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
-    <!-- link para pegar o estilo CSS dos servidores do Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-</head>
-<body>
-    <!--código referente a NAVBAR Menu-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-        <!--é possível mudar a cor da navbar alterando "bg-info" para "bg-danger" por exemplo-->
-        <a class="navbar-brand" href="index.html"><b>Junho Vermelho</a></b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-light" href="#">Home<span class="sr-only">(página atual)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="tiposSanguineos.html">Tipos Sanguíneos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="#">Doenças do Sangue</a>
-              </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Redes Sociais
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Instagram</a>
-                <a class="dropdown-item" href="#">Facebook</a>
-                <a class="dropdown-item" href="#">Twitter</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Algo mais aqui</a>
-              </div>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
-          </form>
-        </div>
-      </nav>
-       <!--/FIM código referente a NAVBAR-->
+  <head>
+    <link rel="shortcut icon" href="assets/img/favicon-16x16.png">
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <!--Grid-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-      <!--container faz com que fique um espaço preenchido fixo na tela, caso a gente não queira podemos tirar e caso a 
-      gente queira que fique mais justo use fluid-->
+    <!--para não criar um novo arquivo HTML criei farei o Style aqui-->
+    <style>
+        .tm-social {
+            width: 50px;
+            height: 50px;
+        }
+        .colorAzul {
+            color: #3F7480;
+        }
+        
+        .colorVerm {
+          color: #8C2730;
+        }
+
+    </style>
+    <!--Fim Style -->
+
+    <title>Doe Sangue</title>
+  </head>
+  <body>
+   <!--código referente a NAVBAR Menu-->
+   <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <!--é possível mudar a cor da navbar alterando "bg-info" para "bg-danger" por exemplo-->
+    <img src="assets/img/favicon-16x16.png" alt="Logo do site" with="10px">
+    <a class="navbar-brand" href="siteCompleto.html"><b>Junho Vermelho</a></b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link colorVerm" href="siteCompleto.html">Home<span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorVerm" href="tiposSanguineos.html">Tipos Sanguíneos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link colorVerm" href="doencasDoSangue.html">Doenças do Sangue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link colorVerm" href="historiasDoHemocentro.html">Histórias do Hemocentro</a>
+          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link colorVerm dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Engaje no Junho Vermelho!
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            
+            <a class="dropdown-item" href="#">Material para divulgar campanhas</a>
+            <a class="dropdown-item" href="#">Lista de Hemocentros SP</a>
+            <a class="dropdown-item" href="#">Envie sua História!</a>
+            <div class="dropdown-divider"></div>
+            
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+   <!--/FIM código referente a NAVBAR-->
+
+   <!--carrossel-->
+   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <!--esse active identifica que vai começar a partir dele-->
+        <img class="d-block w-100" src="assets/img/DoacaoDeSangue.png" alt="Primeiro Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/img/SangueBraco.png" alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://blog.trasmontano.com.br/wp-content/uploads/2021/05/Banner_1000x485.png" alt="Terceiro Slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+   <!--/carrossel-->
+
+   <!--jumbotron-->
+   <div class="jumbotron jumbotron-fluid">
     <div class="container">
+      <h1 class="display-4 text-center colorAzul"><b>Seja um herói!</b></h1>
+      <p class="lead text-center">Lute contra o inimigo <i>Estoque de Sangue Baixo!</i></p>
+      <p class="lead text-center">Não importa se o seu poder é <b>A</b>, <b>A-</b>, <b>B</b>, <b>B-</b>, <b>AB</b>, <b>AB-</b>, <b>O</b> ou <b>O-</b>.</p> 
+      <p class="lead text-center">Todo poder é bem vindo!</p>
+    </div>
+    <div class="align-items-center">
+      <p><center><img src="assets/img/doacao-de-sangue (1).png" alt="Logo do site" with="10px" height="45px"></p></center>
+    </div>
+  </div>
+   <!--/jumbotron--> 
 
-       <!--mt = margin top, vai de 1 a 5-->
-       <!--as colunas possuem um padding próprio para remover é necessário informar isso como fizemos através do "p-0"-->
-       <!--aqui estamos falando que queremos usar display flex e a propriedade center dele-->
-       <!-- para alterar a qtd de colunas no grid é importante alterar o valor de "col-md-6" a qtd máx é 12-->
-       <div class="row mt-5 d-flex justify-content-center">
-            <div class="col-md-6 p-0">
-                    <div class="bg-danger">4 coluna</div>
+   <!--cards-->
+   <!--para que fique organziado eu colo os cards dentro e uma DIV de Container-->
+
+   <div class="container">
+    <div class="card-columns">
+        <div class="card">
+          <img class="card-img-top" src="assets/img/doandosanguedeboa.jpg" alt="Mulher de máscara, doando sangue e ouvindo música">
+          <div class="card-body">
+            <p class="card-text text-justify"></p>
+          </div>
+        </div>
+       
+        <div class="card p-3">
+          <blockquote class="blockquote mb-0 card-body">
+            <p class="text-justify">Graças a outros doadores pude me recuperar de um acidente. Desde então tenho um compromisso sério com o hemocentro da minha região.</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Camila Silvino, <cite title="Título da fonte">Desenvolvedora PHP</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        
+        <div class="card p-3">
+          <blockquote class="blockquote mb-0 card-body">
+            <p class="text-justify">Eu achava que por ter tatuagem não poderia doar sangue. Agora sei que existe um intervalo a ser respeitado, 
+            mas que posso sim contribuir.</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Paulo Paulino, <cite title="Título da fonte">Desenvolvedora Frontend</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        
+        <div class="card">
+          <img class="card-img-top" src="assets/img/doandosangue.jpg" alt="Imagem do braço de um doador de sangue">
+          <div class="card-body">
+            <p class="card-text"></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="assets/img/sorrisoenquantodoa.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <p class="card-text"></p>
+          </div>
+        </div>
+        
+        
+        <div class="card p-3 text-right">
+          <blockquote class="blockquote mb-0">
+            <p class="text-justify">Acompanhando o jornal fiquei sabendo que os estoques estavam abaixo do esperado. Sou doadora universal então corri para o hemocentro mais próximo. 
+            É bom demais ajudar aqueles que necessitam.</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Lara Blood, <cite title="Título da fonte">Cientista de Dados</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+      
+      </div>
+   
+   
+   <!--/cards-->
+
+   <!--texto e vídeo-->
+   
+        <div class="row mt-5 mb-5">
+                <div class="col-md-6">
+                    <h3 class="colorAzul"> <img src="assets/img/doacao-de-sangue (1).png" alt="Imagem de um desenho de bolsa de sangue" with="10px" height="45px"> É preciso criar o hábito de doar</h3>
+                    <p class="text-justify">Atualmente, são coletadas no Brasil, cerca de 3,6 milhões de bolsas/ano, o que corresponde ao índice de 1,8% da 
+                    população doando sangue. Embora o percentual esteja dentro dos parâmetros da Organização Mundial de Saúde (OMS), o Ministério da Saúde trabalha para
+                    aumentar este índice. O Ministério da Saúde reduziu a idade mínima de 18 para 16 anos (com autorização do responsável) e aumentou de 67 para 69 anos 
+                    a idade máxima para doação de sangue no País. Alguns estados como São Paulo e o Distrito Federal fornecem vantagens para os doadores regulares de sangue. Existem leis que isentam da taxa de
+                    inscrição os doadores de sangue que quiserem prestar concursos públicos realizados pela Administração Direta, Indireta, Fundações Públicas e Universidades
+                    Públicas do Estado. </p>
+                    <p>Fonte: <a href="https://bvsms.saude.gov.br/a-importancia-da-doacao-regular-de-sangue/">saude.gov.br</a></p>
+                 </div>
+
+                <div class="col-md-6">
+                    <iframe width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/0VmBwbBttiI" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                    </div>
+        </div>
+        <!--/texto e vídeo-->
+
+        <!-- Formulário -->
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <h4 class="text-center colorAzul">Entre em contato com a gente</h4>
+            </div>
+        </div>
+
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <form>
+                  <div class="form-group">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="nome" class="form-control" id="nome" placeholder="Insira seu nome" onkeyup="validaNome()">
+                   </div>
+                   <div id="txtNome"></div>
+                   
+                    <div class="form-group">
+                      <label for="email">Seu endereço de email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" onkeyup="validaEmail()">
+                     </div>
+                     <div id="txtEmail"></div>
+
+                    <div class="form-group">
+                      <label for="assunto">Digite sua mensagem:</label>
+                      <textarea class="form-control" id="assunto" rows="3" onkeyup="validaAssunto()"></textarea>
+                      
+                    </div>
+                    <div id="txtAssunto"></div>
+
+                    <!--para adicionar o botão no formulário / "d-flex justify-content-end para que fique alinhado a direita"-->
+                    <div class="form-group d-flex justify-content-end">
+                        <button class="btn btn-outline-success" onclick="enviar()">Enviar</button>
+                    </div>
+                  </form>
             </div>
 
-            <div class="col-md-6 p-0">
-                <div class="bg-warning">4 coluna</div>
-             </div>
-
+            <div class="col-md-6">
+              <p>
+                <p></p>
+              </p>
+                <!-- essa "class=w-100" define que a largura do iframe será 100% o tamanho da DIV que ele está inserido-->
+                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d117023.80933303053!2d-46.71855102878348!3d-23.568657477579666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shemocentros%20s%C3%A3o%20paulo%20capital!5e0!3m2!1spt-BR!2sbr!4v1653487332345!5m2!1spt-BR!2sbr" 
+                width="400" 
+                height="250" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()"  id="mapa"></iframe>                
+            </div>
         </div>
 
-        </div>
+        
+        <!-- Formulário-->
+
+
+
+    <hr> <!--TAG de separação de conteúdos-->
+    <!--RODAPÉ-->
+        <footer>
+            
+            <div class="row mb-2">
+                <div class="col-md-12 d-flex justify-content-center">
+                    
+                        <!--para tornar os ícones clicavéis vamos associar links as imagens-->
+                        <a href="https://pt-br.facebook.com/DoeSangueMS/" target="_blank" class="p-3">
+                        <img class="tm-social" src="assets/img/facebook.png" alt="Logo facebook">
+                        </a>
+                        
+                        <a href="https://www.instagram.com/prosangue/" target="_blank" class="p-3">
+                        <img class="tm-social" src="assets/img/instagram.png" alt="Logo instagram">
+                        </a>
+                        
+                        <a href="https://www.youtube.com/user/hemocentroribeirao?app=desktop" target="_blank" class="p-3">
+                        <img class="tm-social" src="assets/img/youtube.png" alt="logo youtube">
+                        </a>
+                    
+                </div>
+            </div>
+
+            <div class="row mb">
+                <div class="col-md-12">
+                    <!--aqui dentro do container a class="center" não funciona, por isso usamos o "text-center"-->
+                    <p class="text-center"> <!--texto do rodapé / &copy símbolo de copyright-->
+                        Todos os direitos reservados: JT &copy;  
+                    </p> 
+                </div>
+            </div>
+
+
+        </footer>
+    <!--/RODAPÉ-->
+  
     </div>
-      <!--/Grid-->
 
+   
 
-
-
-
-
-
-<!-- Script necessário para usar código JS do Bootstrap! -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
- </body>
- </html>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
